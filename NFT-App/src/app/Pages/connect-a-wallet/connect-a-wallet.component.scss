@@ -1,0 +1,59 @@
+@import '/src/styles.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  width: 100%;
+  min-height: 40.4vw;
+  background-color: $background;
+  gap: 20px;
+}
+
+.example-box {
+  width: 200px;
+  height: 200px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.browse-categories {
+  &__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 60px;
+    gap: 20px;
+    .card {
+      display: block;
+      width: 240px;
+      min-height: 316px;
+      background: $backgroundSecondary;
+      border-radius: 20px;
+      img {
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        backdrop-filter: blur(4px);
+        &:nth-child(2) {
+          position: relative;
+          filter: none;
+          padding: 70px;
+        }
+      }
+      h5 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        padding-top: 20px;
+        padding-left: 30px;
+        position: relative;
+      }
+    }
+  }
+}

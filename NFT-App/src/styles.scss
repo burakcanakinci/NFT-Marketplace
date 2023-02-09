@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+$background: #2B2B2B;
+$backgroundSecondary: #3B3B3B;
+$labelText: #858584;
+$text: #FFFFFF;
+$callToAction: #A259FF;
+$gradientColdUp: #A259FF;
+$gradientColdDown: #377DF7;
+$gradientWarmUp: #A259FF;
+$gradientWarmDown: #FF6250;
+
+$breakpointLg: 1080px;
+$breakpoint: 974px;
+* {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-size: 16px;
+}
+h1 {
+  color: $text;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
+}
+h2 {
+  color: $text;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 110%;
+}
+h3 {
+  color: $text;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+}
+h4 {
+  color: $text;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+}
+h5 {
+  color: $text;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+}
+p {
+  color: $text;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+caption {
+  color: $text;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

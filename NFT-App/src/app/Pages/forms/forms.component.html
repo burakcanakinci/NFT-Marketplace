@@ -1,0 +1,87 @@
+<div class="container">
+<!-- ----------------------------------&&&----------------------------------- -->
+  <!-- <h1>{{ title }}</h1>
+
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm" ngNativeValidate>
+  <label for="userInput">Add Task</label>
+  <input placeholder="Write a task" ngModel name="userInput" required/>
+  <label for="date">By when</label>
+  <input type="date" name="date" ngModel />
+  <button type="submit">Add</button>
+</form>
+
+<ul>
+  <li *ngFor="let item of todoList">
+    <button (click)="onDelete(item.id)">X</button>
+    {{ item.title }} {{ item.date && 'by' }} {{ item.date ? item.date : '' }}
+  </li>
+</ul> -->
+<!-- ----------------------------------&&&----------------------------------- -->
+
+<!-- ----------------------------------$$$----------------------------------- -->
+  <div class="container__request-panel">
+    <h4>Star Wars Characters</h4>
+    <h4>Star Wars Movies</h4>
+    <app-button (click)="fetchPeople()" [color]="theButton">Request Character</app-button>
+    <app-button (click)="fetchMovies()" [color]="theButton">Request Movie</app-button>
+  </div>
+  <div *ngIf="loading" class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+  <div class="container__http-request">
+    <div class="grid-container">
+
+      <div class="container__post-request">
+        <form (ngSubmit)="makePostRequest(name, job)">
+          <label><p>Name: <input [(ngModel)]="name" name="name" type="text"></p></label><br/>
+          <label><p>Job: <input [(ngModel)]="job" name="job" type="text"></p></label><br/>
+          <button type="submit">Post Request</button>
+        </form>
+      <div>
+        <p>Entered name: {{ responseData.name }}</p> <br/>
+        <p>Entered job: {{ responseData.job }}</p>
+      </div>
+    </div>
+    <div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <label>Name:<input type="text" formControlName="name" [ngClass]="{ 'invalid': nameForm?.invalid && nameForm?.touched }">
+          <div *ngIf="nameForm?.invalid && nameForm?.touched" class="error">
+            Name is required.
+          </div></label><br>
+          <label>Email:<input type="email" formControlName="email" [ngClass]="{ 'invalid': emailForm?.invalid && emailForm?.touched }">
+            <div *ngIf="emailForm?.invalid && emailForm?.touched" class="error">
+              Email is required.
+            </div></label><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    <div class="container__http-request__characters">
+      <div *ngFor="let data of dataPeople" class="container__http-request__data">
+        <h5>Character</h5>
+        <p>Name: <span>{{ data.name }}</span></p>
+        <p>Height: <span>{{ data.height }}cm</span></p>
+        <p>Mass: <span>{{ data.mass }}</span></p>
+        <p>Hair color: <span>{{ data.hair_color }}</span></p>
+        <p>Eye color: <span>{{ data.eye_color }}</span></p>
+        <p>Birth year: <span>{{ data.birth_year }}</span></p>
+        <p>Gender: <span>{{ data.gender }}</span></p>
+      </div>
+    </div>
+    <div class="container__http-request__movies">
+      <div *ngFor="let data of dataMovies" class="container__http-request__data">
+        <h5>Movie</h5>
+        <p>Title: <span>{{ data.title }}</span></p>
+        <p>Episode: <span>{{ data.episode_id }}</span></p>
+        <p>Opening line: <span>{{ data.opening_crawl }}</span></p>
+        <p>Director: <span>{{ data.director }}</span></p>
+        <p>Producer: <span>{{ data.producer }}</span></p>
+        <p>Release year: <span>{{ data.release_date }}</span></p>
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------$$$----------------------------------- -->
+
+</div>

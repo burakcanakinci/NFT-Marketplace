@@ -1,0 +1,20 @@
+<div class="nft-cards">
+  <div class="nft-cards-container">
+    <div *ngFor="let nftCard of nftCards" class="nft-card">
+      <img src="{{ nftCard.img }}" alt="">
+      <div class="nft-card__title">
+        <h5>{{ nftCard.title }}</h5>
+        <img src="/../assets/Avatars/AvatarPlaceholder-8.png" alt="">
+        <p>Animakid</p>
+      </div>
+        <div class="nft-card__price">
+          <caption>Price</caption>
+          <p>1.63 ETH</p>
+        </div>
+        <div class="nft-card__bid">
+          <caption>Highest Bid</caption>
+          <p>0.33 wETH</p>
+        </div>
+    </div>
+  </div>
+</div>

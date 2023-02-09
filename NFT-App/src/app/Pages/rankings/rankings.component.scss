@@ -1,0 +1,27 @@
+@import '/src/styles.scss';
+
+.container {
+  display: grid;
+  place-content: start center;
+  width: 100%;
+  background-color: $background;
+  gap: 20px;
+}
+
+.events {
+  padding-top: 2vh;
+}
+
+.directive {
+  color: white;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.colorInput {
+  margin-bottom: 20px;
+
+}

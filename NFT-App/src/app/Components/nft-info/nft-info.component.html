@@ -1,0 +1,28 @@
+<div class="nft-info__container">
+  <div class="nft-info__frame">
+    <div class="nft-info__frame__left">
+      <div class="artist-card">
+        <img src="../../../assets/Avatars/AvatarPlaceholder-5.png" alt="">
+        <p>Shroomie</p>
+      </div>
+      <h2 *ngIf="!timeUp && !isMessage">Magic Mashrooms</h2>
+      <h2 *ngIf="timeUp && !isMessage">Mashroom Time!</h2>
+      <h2 *ngIf="isMessage">or not...</h2>
+      <app-button (click)="startTimer()" [color]="color">See NFT</app-button>      
+    </div>
+    <div class="nft-info__frame__right">
+      <div class="auction-timer">
+        <caption>Auction ends in:</caption>
+        <div class="timer">
+          <h3>00 :</h3>
+          <h3>{{ minutes | number:'2.0' }} :</h3>
+          <h3>{{ seconds | number:'2.0' }}</h3>
+          <p>Hours</p>
+          <p>Minutes</p>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src=".././../../assets/NFT Highlight_cleanup.png" alt="">
+</div>

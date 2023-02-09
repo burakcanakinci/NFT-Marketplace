@@ -1,0 +1,65 @@
+@import '/src/styles.scss';
+@import '/src/app/Components/button/button.component.scss';
+@import '/src/app/Components/nft-card/nft-card.component.scss';
+
+.hero {
+  padding: 80px 195px;
+  width: 1440px;
+  // height: 100%;
+  background-color: $background;
+  h1 {
+    width: 75%;
+    padding-bottom: 20px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 564px 510px;
+    grid-template-rows: 564px;
+    justify-content: center;
+    &__headline {
+      font-family: 'Work Sans', sans-serif;
+      p {
+        font-family: 'Work Sans', sans-serif;
+        width: 90%;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        padding-bottom: 40px;
+      }
+    }
+    &__info {
+      padding-top: 40px;
+      width: 510px;
+      height: 77px;
+      ul {
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        list-style: none;
+        padding: 0px;
+        gap: 30px;
+      }
+      h4 {
+        height: 40px;
+      }
+      p {
+        font-size: 24px;
+        width: 150px;
+      }
+    }
+  }
+}
+app-nft-card {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .hero {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .hero {
+    width: auto;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="artist-container">
+  <div class="grid-container">
+    <div class="headline">
+      <h3>Top Creators</h3>
+      <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+      <app-button (someEvent)="anotherFunction($event)" [color]="secondaryOutlinedButton">View Rankings</app-button>
+    </div>
+    <div class="artist-cards">
+      <div *ngFor="let artist of artists" class="artist-card">
+        <div class="artist-card__id-number">{{ artist.id }}</div>
+        <img class="artist-card__avatar-img" src="{{ artist.img }}">
+        <h5>{{ artist.name }}</h5>
+        <p>Total sales:</p>
+        <p>{{ artist.sales }}</p>
+      </div>
+    </div>
+  </div>
+</div>

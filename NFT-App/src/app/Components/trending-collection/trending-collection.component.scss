@@ -1,0 +1,71 @@
+@import '/src/styles.scss';
+
+.trending-collection {
+  display: grid;
+  width: 100%;
+  background-color: $background;
+  justify-content: center;
+  padding: 80px 0;
+  &__container {
+    display: block;
+    width: 1050px;
+    height: 100%;
+    p {
+      font-family: 'Work Sans';
+      padding-top: 10px;
+      font-size: 22px;
+      text-transform: capitalize;
+      line-height: 160%;
+    }
+  }
+  &__card {
+    display: block;
+    padding-top: 60px;
+    width: 330px;
+    height: 525px;
+    background: $background;
+    border-radius: 20px;
+    &--small {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 15px 0 15px 0;
+      width: 330px;
+      height: 100px;
+      img {
+        padding-right: 15px;
+      }
+    }
+    &__info {
+      h5 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+      }
+    }
+  }
+}
+.additional-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: $callToAction;
+  border-radius: 20px;
+}
+.artist-info {
+  display: flex;
+  padding-top: 10px;
+  height: 24px;
+  gap: 12px;
+  p {
+    position: relative;
+    bottom: 12px;
+    font-family: 'Work Sans';
+    font-size: 16px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}

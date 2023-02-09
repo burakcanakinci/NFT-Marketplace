@@ -1,0 +1,33 @@
+@import '/src/styles.scss';
+
+body {
+  width: 510px;
+  height: 401px;
+  padding: 27px 0 27px 0;
+  background: url('/../assets/ImagePlaceholder.png') center no-repeat;
+}
+.nft-info {
+  position: relative;
+  top: 401px;
+  height: 109px;
+  background-color: $backgroundSecondary;
+  border-radius: 0px 0px 20px 20px;
+  h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    padding: 20px 0 0 20px;
+  }
+  p {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 160%;
+  }
+}
+.artist-info {
+  display: flex;
+  padding-left: 20px;
+  height: 24px;
+  gap: 12px;
+  img {
+    display: flex;
+  }
+}

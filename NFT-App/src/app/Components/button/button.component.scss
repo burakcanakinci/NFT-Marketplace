@@ -1,0 +1,88 @@
+@import "/src/styles.scss";
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+  border-radius: 20px;
+  border: 2px solid $callToAction;
+  cursor: pointer;
+  &__primary {
+    color: $text;
+    width: 206px;
+    height: 70px;
+    &--filled {
+      @extend .button__primary;
+      background-color: $callToAction;
+    }
+    &--outlined {
+      @extend .button__primary;
+      background-color: $background;
+    }
+  }
+  &__secondary {
+    color: $text;
+    width: 186px;
+    height: 58px;
+    &--filled {
+      @extend .button__secondary;
+      background-color: $callToAction;
+    }
+    &--outlined {
+      @extend .button__secondary;
+      background-color: $background;
+    }
+  }
+  &__tertiary {
+    color: $text;
+    width: 186px;
+    height: 44px;
+    &--filled {
+      @extend .button__tertiary;
+      background-color: $callToAction;
+    }
+    &--outlined {
+      @extend .button__tertiary;
+      background-color: $background;
+    }
+  }
+}
+.header-button {
+  padding: 0px;
+}
+.account-btn {
+  width: 327px !important;
+  height: 43px !important;
+  padding: 0;
+}
+.copy-wallet-btn {
+  width: 186px;
+  height: 60px;
+  padding: 0;
+}
+.follow-btn {
+  width: 145px;
+  height: 60px;
+  padding: 0;
+}
+.rankings-btn {
+  width: 150px;
+}
+.discover-btn {
+  padding: 0;
+}
+.see-nft-btn {
+  padding: 0 11px;
+  background-color: white !important;
+  color: black;
+  border-color: white;
+}

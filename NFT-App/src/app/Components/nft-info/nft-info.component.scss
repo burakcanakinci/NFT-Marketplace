@@ -1,0 +1,92 @@
+.nft-info{
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: flex-end;
+    // padding: 360px 195px 60px;
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+  }
+  &__frame {
+    // position: absolute;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 1050px;
+    color: black;
+    padding-top: 435px;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h2 {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 110%;
+      }
+      .artist-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 12px;
+        width: 115px;
+        height: 24px;
+        background: #3B3B3B;
+        border-radius: 20px;
+        flex: none;
+        img {
+          width: 24px;
+          height: 24px;
+          z-index: 1;
+        }
+        p {
+          padding-left: 40px;
+          padding-top: 13px;
+          font-family: 'Work Sans';
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .auction-timer {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 10px;
+        width: 255px;
+        height: 95px;
+        background: rgba(59, 59, 59, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        p {
+          font-size: 12px;
+        }
+        .timer {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: auto auto;
+          align-self: stretch;
+          h3 {
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+  }
+}

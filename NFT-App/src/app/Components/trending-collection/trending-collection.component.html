@@ -1,0 +1,23 @@
+<div class="trending-collection">
+  <div class="trending-collection__container">
+    <h3>Trending Collection</h3>
+    <p>Checkout our weekly updated trending collection.</p>
+    <div class="grid-container">
+      <div *ngFor="let trend of trends" class="trending-collection__card">
+        <img src="{{ trend.primaryImg }}" alt="">
+        <div class="trending-collection__card--small">
+          <img src="{{ trend.secondaryImg }}" alt="">
+          <img src="{{ trend.tertiaryImg }}">
+          <div class="additional-number"><h5>1025+</h5></div>
+        </div>
+        <div class="trending-collection__card__info">
+          <h5>{{ trend.infoTitle }}</h5>
+          <div class="artist-info">
+            <img src="{{ trend.artistAvatar }}">
+            <p>{{ trend.artistName }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="browse-categories">
+  <div class="browse-categories__container">
+    <h3>Browse Categories</h3>
+    <div class="browse-categories__grid">
+      <div *ngFor="let category of categories" class="card">
+          <img src="{{ category.img }}" alt="">
+        <img src="{{ category.icon }}" alt="">         
+        <h5>{{ category.title }}</h5>
+      </div>
+    </div>
+  </div>
+</div>

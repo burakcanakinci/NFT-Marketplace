@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="events">
+    <input (focus)="onFocus($event)" type="text">
+    <button (click)="onClick($event)" #clickedButton>Click me</button>
+  </div>
+  <div>
+    <p>{{ message | reverse }}</p>
+    <p (mouseenter)="transform()" (mouseleave)="reset()">{{ transformedMessage || message }}</p>
+  </div>
+  <div appHighlight class="directive">Hover over me to highlight</div>
+  <div class="colorInput">
+    <input type="color" [(ngModel)]="color">
+    <p>Selected color Hex: {{ color }}</p>
+    <p style="position:absolute;">Selected color: {{ color | hexToRgb }}</p>
+  </div>
+  <div class="inputs">
+    <button (click)="addData()">Randomize</button>
+    <!-- <button (click)="dataDown()">dataDown</button> -->
+  </div>
+  <app-my-chart></app-my-chart>
+
+</div>

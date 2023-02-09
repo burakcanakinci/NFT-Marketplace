@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+  <button (click)="open()">
+    <h2>Open</h2>
+  </button>
+  <div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+  <div class="browse-categories__grid">
+    <div cdkDrag *ngFor="let category of categories" class="card">
+        <img src="{{ category.img }}" alt="">
+      <img src="{{ category.icon }}" alt="">         
+      <h5>{{ category.title }}</h5>
+    </div>
+  </div>
+  <app-modal-diagram></app-modal-diagram>
+</div>
+<!-- <app-nft-info></app-nft-info> -->

@@ -1,0 +1,21 @@
+@import '/src/styles.scss';
+@import '/src/app/Components/top-rated-artists/top-rated-artists.component.scss';
+@import '/src/app/Components/artist-page-create/artist-page-create.component.scss';
+
+.headline {
+  z-index: 6;
+}
+
+.nft-cards {
+  background-color: $background;
+  &-container {
+    background-color: $background;
+    margin-top: 30px;
+  }
+}
+.nft-card {
+  background-color: $backgroundSecondary;
+}
+app-button {
+  left: calc(100% - 190px);
+}

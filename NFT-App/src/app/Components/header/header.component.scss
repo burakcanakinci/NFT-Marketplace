@@ -1,0 +1,120 @@
+@import "/src/styles.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    padding: 20px 50px;
+    height: 60px;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    background-color: $background;
+  }
+  &__logo {
+    padding: 0px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  &__menu {
+    justify-content: flex-end;
+    padding: 0px;
+    gap: 10px;
+    width: 607px;
+    height: 60px;
+  }
+  &__menu-elements { 
+    padding: 0px 20px;
+    border-radius: 20px;
+    flex: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: $text;
+    cursor: pointer;
+  }
+}
+.header__menu--mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#hamburger-icon {
+  display: none;
+}
+ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+@media only screen and (max-width: $breakpoint) {
+  ul {
+    display: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__container {
+      padding: 20px 50px;
+      height: 14px;
+      left: 20px;
+      right: 20px;
+      top: 20px;
+      background-color: $background;
+    }
+    &__logo {
+      padding: 0px;
+      gap: 10px;
+      h5 {
+        font-size: 16px;
+        width: 160px;
+      }
+    }
+    &__menu {
+      justify-content: flex-end;
+      padding: 0px;
+      gap: 10px;
+    }
+    &__menu-elements { 
+      padding: 0px 20px;
+      border-radius: 20px;
+      flex: none;
+      font-family: 'Work Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      color: $text;
+    }
+  }
+  #store-front-icon {
+    width: 24px;
+    height: 24px;
+  }
+  #hamburger-icon {
+    display: revert;
+    position: fixed;
+	  left: calc(100% - 90px);
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+  }
+}
+.faded {
+  pointer-events: none;
+  opacity: 0.5;
+}

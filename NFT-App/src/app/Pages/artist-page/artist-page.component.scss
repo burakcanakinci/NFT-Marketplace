@@ -1,0 +1,140 @@
+@import '/src/scss/styles.scss';
+
+.artist {
+  display: flex;
+  justify-content: center;
+  background-color: $background;
+  // width: 100vw;
+
+}
+.artist-page {
+  width: 1050px;
+  &__cover {
+    min-width: 98.91vw;
+    height: 370px;
+    background-color: $background;
+    margin-left: -235px;
+    img {
+      min-width: 98.91vw;
+      height: 320px;
+      overflow-x: hidden;
+    }
+  }
+  &__avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    padding-bottom: 40px;
+    width: 1050px;
+    height: 120px;
+    margin-top: -120px;
+    img {
+      width: 120px;
+      height: 120px;
+      border: 2px solid $backgroundSecondary;
+      border-radius: 20px;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    min-height: 455px;
+    background-color: $background;
+    align-self: center;
+    &--left {
+      width: 599px;
+      height: 377px;
+      h2 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        list-style: none;
+        padding: 30px 0 0 0;
+        gap: 30px;
+      }
+      p {
+        font-family: 'Work Sans';
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        color: $text;
+      }
+      h5 {
+        padding-top: 30px;
+        text-transform: capitalize;
+        color: $labelText;
+      }
+    }
+    &--right {
+      margin-top: 40px;
+      display: flex;
+      width: 351px;
+      height: 60px;
+      gap: 20px;
+    }
+  }
+  &__tab-bar {
+    display: flex;
+    height: 66px;
+    background-color: $background;
+    padding-top: 20px;
+    align-items: center;
+    border-top: 1px solid $backgroundSecondary;
+    margin-top: 60px;
+    &__numbers {
+      display: flex;
+      width: 1050px;
+      height: 60px;
+      gap: 10px;
+    }
+    h5 {
+      font-family: 'Work Sans';
+      font-weight: 600;
+    };
+    
+  }
+}
+.links-container {
+  display: flex;
+  padding-top: 10px;
+  gap: 12px;
+  svg {
+    cursor: pointer;
+  }
+}
+.number-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  width: auto;
+  height: 20px;
+  background: $labelText;
+  border-radius: 20px;
+  color: $text;
+  &--faded {
+    background-color: $backgroundSecondary;
+  }
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 60px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 30px;
+}
+.tab-faded {
+  h5 {
+    color: $labelText;
+  }
+}
+.tab-border-bottom {
+  border-bottom: 2px solid $labelText;
+}

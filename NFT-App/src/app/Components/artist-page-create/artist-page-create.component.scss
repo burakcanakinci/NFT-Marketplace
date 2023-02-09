@@ -1,0 +1,75 @@
+@import '/src/styles.scss';
+
+.nft-cards {
+  display: flex;
+  width: 100%;
+  background-color: $backgroundSecondary;
+  justify-content: center;
+  &-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 30px;
+    width: 1050px;
+    // height: 1627px;
+    background-color: $backgroundSecondary;
+    padding: 80px 115px;
+  }
+}
+.nft-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 330px;
+  height: 490px;
+  border-radius: 20px;
+  background-color: $background;
+  &__title {
+    align-self: first baseline;
+    padding: 20px 0 0 30px;
+    img {
+      display: flex;
+      padding-top: 5px;
+      height: 24px;
+      gap: 12px;
+    }
+    p {
+      position: relative;
+      left: 40px;
+      bottom: 24px;
+    }
+    h5 {
+      font-family: 'Work Sans';
+      font-weight: 600;
+    }
+  }
+  &__price {
+    width: 135px;
+    // height: 50px;
+    position: relative;
+    right: 68px;
+    bottom: 10px;
+    caption {
+      color: $labelText;
+    }
+    p {
+      padding-top: 6px;
+    }
+  }
+  &__bid {
+    display: grid;
+    justify-content: flex-end;
+    width: 135px;
+    // height: 50px;
+    position: relative;
+    left: 70px;
+    bottom: 64px;
+    caption {
+      color: $labelText;
+      justify-self: end;
+    }
+    p {
+      padding-top: 6px;
+    }
+  }
+}

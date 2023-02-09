@@ -1,0 +1,18 @@
+<div class="hero">
+    <div class="hero__container">
+      <div class="hero__container__headline">
+        <h1>Discover Digital Art & Collect NFTs</h1>
+        <p (click)="decrement()">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+        <app-button (click)="increment()" [color]="secondaryFilledButton">Get Started</app-button>
+        <div class="hero__container__info">
+          <ul>
+            <li *ngFor="let card of cards">
+              <h4>{{ card.likes }}</h4>
+              <p>{{ card.title }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <app-nft-card (click)="redirectTo()"></app-nft-card>
+    </div>
+</div>
